@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:dbname=yvuxfgw17qqisayl;host=nkpl8b2jg68m87ht.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;charset=utf8mb4';
-$name = 'vy7g5a3wqyoxuvk2';
-$password = 'bzfgl6ua6h3t9cwd';
+$dsn = 'mysql:dbname=php_db_app;host=localhost;charset=utf8mb4';
+$name = 'root';
+$password = 'root';
 
 try {
   $pdo = new PDO($dsn, $name, $password);
@@ -58,11 +58,7 @@ try {
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.php">商品管理アプリ</a>
-    </nav>
-  </header>
+  <?php include 'header.php'; ?>
   <main>
     <article class="products">
       <h1>商品一覧</h1>
@@ -117,9 +113,7 @@ try {
       </table>
     </article>
   </main>
-  <footer>
-    <p class="copyright">&copy; 商品管理アプリ All rights reserved.</p>
-  </footer>
+  <?php include 'footer.php'; ?>
 </body>
 
 </html>

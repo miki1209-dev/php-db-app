@@ -13,11 +13,7 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.php">商品管理アプリ</a>
-    </nav>
-  </header>
+  <?php include 'header.php'; ?>
   <main>
     <article class="home">
       <h1>商品管理アプリ</h1>
@@ -25,9 +21,7 @@
       <a href="read.php" class="btn">商品一覧</a>
     </article>
   </main>
-  <footer>
-    <p class="copyright">&copy; 商品管理アプリ All rights reserved.</p>
-  </footer>
+  <?php include 'footer.php'; ?>
 </body>
 
 </html>
